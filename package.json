@@ -6,7 +6,8 @@
   "scripts": {
     "build:watch": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d build"
+    "predeploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
