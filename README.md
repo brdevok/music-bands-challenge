@@ -1,5 +1,7 @@
 #### CURRENTLY IN DEVELOPMENT
 
+#### View the live progress [clicking here](https://braiandev.github.io/music-bands-challenge/#/)
+
 Todo:
 
  * ~~List bands~~ :heavy_check_mark:
