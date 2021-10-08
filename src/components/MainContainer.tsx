@@ -17,10 +17,12 @@ const MainContainer:React.FC<{children:React.ReactNode}> = ({children}):JSX.Elem
                 <Box sx={{
                     backgroundColor: indigo[50],
                     minHeight: "100vh",
-                    padding: "1rem 0"
+                    padding: "1rem 0",
+                    display: "flex",
+                    alignItems: "stretch"
                 }}>
 
-                    <Container fixed>
+                    <Container fixed sx={{position: "relative"}}>
                         {children}
                     </Container>
 

@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Link, Typography } from "@mui/material";
 import React, { useState } from "react";
 import AuthFormInput from "../../components/AuthFormInput";
 import LogInContainer from "../../components/LogInContainer";
@@ -60,6 +60,15 @@ const LogIn:React.FC = ():JSX.Element => {
                     marginTop: "1rem"
                 }}
             >Log In</Button>
+
+            <Link 
+                target="_blank"
+                href="https://my-json-server.typicode.com/braiandev/users-db/users" 
+                underline="none" 
+                mt={2}
+            >
+                See available test users here.
+            </Link>
 
         </LogInContainer>
     );
