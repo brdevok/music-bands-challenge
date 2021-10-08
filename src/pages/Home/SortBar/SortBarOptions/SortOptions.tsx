@@ -1,6 +1,9 @@
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 import React, { Dispatch } from "react";
 
+/**
+ * Provide a selector with options to choose the sort method.
+ */
 const SortOptions:React.FC<{sortBy:string, setSortBy:Dispatch<string>}> = ({sortBy, setSortBy}):JSX.Element => {
 
     const handleChange = (e:SelectChangeEvent) => {

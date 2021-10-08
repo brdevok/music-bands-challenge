@@ -3,6 +3,9 @@ import { indigo } from "@mui/material/colors";
 import React, { useEffect, useState } from "react";
 import { Bands } from "../../../types/Bands";
 
+/**
+ * Return the members of a specific band in a inline dotted-separated text format component.
+ */
 const Members:React.FC<{members:Bands.MemberType[]|undefined}> = ({members}):JSX.Element => {
 
     const [membersString, setMembersString] = useState<string>("");

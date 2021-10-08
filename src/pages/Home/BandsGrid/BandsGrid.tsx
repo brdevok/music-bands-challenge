@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Bands } from "../../../types/Bands";
 import BandCard from "./BandCard";
 
-
+/**
+ * Grid container for bands grid cards.
+ */
 const BandsGrid:React.FC<{bands:Bands.BandType[]}> = ({bands}):JSX.Element => {
 
     const [cards, setCards] = useState<JSX.Element[]>([]);

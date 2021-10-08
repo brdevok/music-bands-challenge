@@ -1,4 +1,4 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
@@ -9,7 +9,11 @@ import BandInfo from "./BandInfo/BandInfo";
 import Members from "./Members/Members";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { indigo } from "@mui/material/colors";
+import InnerPageContainer from "../../components/InnerPageContainer";
 
+/**
+ * This is a band page, it display all the related data of a specific band defined by a ID in the url params.
+ */
 const BandPage:React.FC = ():JSX.Element => {
 
     const { id } = useParams() as {id: string};
@@ -51,7 +55,7 @@ const BandPage:React.FC = ():JSX.Element => {
     }, [band]);
 
     return(
-        <Container fixed>
+        <InnerPageContainer>
 
             <Link to="/" style={{textDecoration: "none"}}>
                 <Button variant="contained" size="small">
@@ -61,14 +65,16 @@ const BandPage:React.FC = ():JSX.Element => {
             </Link>
 
             <BandInfo data={band} genre={genre[0]}/>
+
             <Members members={band?.members}/>
 
             <hr/>
 
             <Typography variant="h6" fontWeight="light" mt={3} color={indigo[900]}>Albums</Typography>
+            
             <AlbumsGrid albums={albums}/>
 
-        </Container>
+        </InnerPageContainer>
     );
 
 }

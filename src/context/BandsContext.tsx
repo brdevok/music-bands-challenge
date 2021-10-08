@@ -15,9 +15,13 @@ export const BandsProvider:React.FC<React.ReactNode> = ({children}):JSX.Element 
 
         const res = await axios.get("https://my-json-server.typicode.com/improvein/dev-challenge/bands");
 
+        const sortedResults = (res.data as Bands.BandType[]).sort((a, b) => {
+            return a.year - b.year;
+        });
+
         dispatch({
             type: "STORE",
-            value: res.data
+            value: sortedResults
         });
 
     }

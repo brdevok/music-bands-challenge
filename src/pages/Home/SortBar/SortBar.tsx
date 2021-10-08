@@ -1,9 +1,12 @@
 import { Stack } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
-import { BandsContext } from "../../../../context/BandsContext";
+import { BandsContext } from "../../../context/BandsContext";
 import SortButtons from "./SortBarOptions/SortButtons";
 import SortOptions from "./SortBarOptions/SortOptions";
 
+/**
+ * The sort bar component provides a set of tools to sort the bands grid displayed in the home page component.
+ */
 const SortBar:React.FC = ():JSX.Element => {
 
     const { sortBands } = useContext(BandsContext);

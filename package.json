@@ -1,8 +1,6 @@
 {
   "name": "music-bands-challenge",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "build:watch": "webpack --mode development --watch",
     "build": "webpack --mode production",
