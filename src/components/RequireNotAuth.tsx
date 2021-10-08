@@ -11,7 +11,7 @@ const RequireNotAuth:React.FC<{children:React.ReactNode}> = ({children}):JSX.Ele
 
     return(
         <>
-            {auth === "false" ? children : <Redirect to="/"/>}
+            {(!auth || auth === "false") ? children : <Redirect to="/"/>}
         </>
     );
 

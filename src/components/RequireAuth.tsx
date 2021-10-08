@@ -11,7 +11,7 @@ const RequireAuth:React.FC<{children:React.ReactNode}> = ({children}):JSX.Elemen
 
     return(
         <>
-            {auth === "true" ? children : <Redirect to="/login"/>}
+            {(auth && auth === "true") ? children : <Redirect to="/login"/>}
         </>
     );
 
