@@ -1,10 +1,9 @@
-import { Stack, Typography, TypographyVariant, useMediaQuery } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Stack, Typography } from "@mui/material";
+import React from "react";
 import { Bands } from "../../../types/Bands";
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import FlagIcon from '@mui/icons-material/Flag';
 import { indigo } from "@mui/material/colors";
-import theme from "../../../theme/theme";
 
 /**
  * Displays basic info of a specific band, like year, title, genre and location.
