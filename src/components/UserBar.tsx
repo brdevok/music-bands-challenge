@@ -3,6 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LogoutIcon from '@mui/icons-material/Logout';
 
+/**
+ * The user bar contains a log out button and is placed at the top of the page.
+ */
 const UserBar:React.FC = () => {
 
     return(

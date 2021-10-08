@@ -2,6 +2,9 @@ import { TextField } from "@mui/material";
 import React from "react";
 import { Auth } from "../types/Auth";
 
+/**
+ * Form input used by the log in page form.
+ */
 const AuthFormInput:React.FC<Auth.InputProps> = ({id, label, type, setValue}):JSX.Element => {
 
     const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {

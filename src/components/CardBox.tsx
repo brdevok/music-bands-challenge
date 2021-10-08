@@ -2,6 +2,9 @@ import { Paper } from "@mui/material";
 import { indigo } from "@mui/material/colors";
 import React from "react";
 
+/**
+ * Special card container for grid cards displayed in the site.
+ */
 const CardBox:React.FC<{children:React.ReactNode}> = ({children}):JSX.Element => {
 
     return(

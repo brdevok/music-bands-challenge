@@ -3,6 +3,9 @@ import { indigo } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import { Paper, Stack } from "@mui/material";
 
+/**
+ * Container for the log in page form.
+ */
 const LogInContainer:React.FC<{children:React.ReactNode}> = ({children}):JSX.Element => {
 
     return(

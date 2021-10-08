@@ -4,6 +4,9 @@ import { indigo } from "@mui/material/colors";
 import React from "react";
 import theme from "../theme/theme";
 
+/**
+ * Main container of the app, contains root components for styling and basic layout.
+ */
 const MainContainer:React.FC<{children:React.ReactNode}> = ({children}):JSX.Element => {
 
     return(
